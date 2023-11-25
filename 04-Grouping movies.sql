@@ -2,7 +2,7 @@ SELECT country, -- For each country report the earliest date when an account was
 	MIN(date_account_start) AS first_account
 FROM customers
 GROUP BY country
-ORDER BY country;
+ORDER BY first_account;
 
 
 SELECT movie_id, 
